@@ -1,21 +1,26 @@
 :root {
-  --bg: #0e0e0e;
-  --surface: #161616;
-  --surface2: #1f1f1f;
-  --border: #2a2a2a;
-  --border2: #383838;
-  --accent: #e8ff47;
-  --accent2: #ff6b35;
-  --accent3: #4dffb8;
-  --text: #f0f0f0;
-  --text2: #888;
-  --text3: #555;
-  --backlog: #3a3a5c;
-  --ongoing: #3a4a3a;
-  --done: #2a2a2a;
-  --backlog-accent: #8888ff;
-  --ongoing-accent: #4dffb8;
-  --done-accent: #888;
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --surface2: #f0f2f5;
+
+  --border: #d9dee5;
+  --border2: #b8c0cc;
+
+  --accent: #2563eb;
+  --accent2: #e85d04;
+  --accent3: #16a34a;
+
+  --text: #172033;
+  --text2: #4b5563;
+  --text3: #6b7280;
+
+  --backlog: #eff6ff;
+  --ongoing: #fff7ed;
+  --done: #f0fdf4;
+
+  --backlog-accent: #2563eb;
+  --ongoing-accent: #ea580c;
+  --done-accent: #16a34a;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -30,16 +35,7 @@ body {
 
 /* GRID BACKGROUND */
 body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 40px 40px;
-  opacity: 0.3;
-  pointer-events: none;
-  z-index: 0;
+  content: none;
 }
 
 /* ======= SETUP SCREEN ======= */
@@ -215,7 +211,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 56px;
-  background: rgba(14,14,14,0.9);
+  background: rgba(255,255,255,0.95);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
@@ -390,7 +386,7 @@ header {
 }
 
 .col-done .card-title {
-  color: var(--text3);
+  color: var(--text2);
   text-decoration: line-through;
 }
 
