@@ -712,3 +712,12 @@ header {
   header { padding: 0 16px; }
   .column { padding: 16px; min-height: auto; }
 }
+ 
+.card-audit {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.5;
+}
