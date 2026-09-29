@@ -16,3 +16,4 @@ Thumbs.db
 
 # Playwright
 .playwright-mcp/
+.wrangler/
